@@ -1,5 +1,5 @@
 body {
-    background-color: #1DB954;
+    background-color: #008000;
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -32,7 +32,7 @@ button {
     border-radius: 1rem;
     border: none;
     background-color: #FFFFFF;
-    color: #1DB954;
+    color: #008000;
     cursor: pointer;
 
     max-width: 50%;
