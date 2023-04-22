@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 1rem;
+    margin-top: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+    margin-top: 1px;
+    font-weight: normal;
+}
+
+img {
+    width: 75px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    border-radius: 5px;
+    width: 450px;
+    height: 500px;
+}
+
+.login-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.login-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.login-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1px;
+}
+
+#username {
+    font-size: 16px;
+    width: 350px;
+    height: 50px;
+}
+
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-login {
+    background-color: #4285F4;
+    color: #FFFFFF;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-login:hover {
+    background-color: #3367D6;
+}
+
+.login-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    color: #6e7780;
+    font-size: 15px;
+}
+
+.login-footer p {
+    margin-bottom: 5px;
+}
+
+.login-footer a {
+    color: #4285F4;
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+button2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: right;
+    color: #4285F4;
+    text-decoration: none;
+}
+button3 {
+    display: flex;
+    justify-content: left;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.right-align {
+    text-align: right;
+}
+
+inline {
+    display: inline-block;
+    margin-right: 10px; /* 增加按鈕之間的間距 */
+}
+
+
