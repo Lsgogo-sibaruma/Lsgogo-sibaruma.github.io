@@ -1,0 +1,100 @@
+/* 全域樣式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 標題樣式 */
+#title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 36px;
+    color: #333;
+}
+
+/* 表單樣式 */
+#movies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 300px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+/* 資料表格樣式 */
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #008CBA;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #006d9e;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 30px;
+}
+
+thead {
+    background-color: #333;
+    color: white;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
