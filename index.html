@@ -7,12 +7,9 @@
 </head>
 <body>
     <h1>上傳圖片</h1>
-    <form id="upload-form">
-        <input type="file" id="file-input" name="file">
-        <button type="submit">上傳</button>
+    <form action="http://192.168.68.54:5000/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="上傳">
     </form>
-    <div id="response"></div>
-
-    <script src="upload.js"></script>
 </body>
 </html>
