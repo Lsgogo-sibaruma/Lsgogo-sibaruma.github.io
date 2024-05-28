@@ -7,48 +7,9 @@
 </head>
 <body>
     <h1>上傳圖片</h1>
-    <form id="upload-form">
-        <input type="file" id="file-input" name="file">
-        <button type="submit">上傳</button>
+    <form action="http://192.168.68.54:5000/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="上傳">
     </form>
-    <div id="response"></div>
-
-    <script>
-        document.getElementById('upload-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            var fileInput = document.getElementById('file-input');
-            if (fileInput.files.length === 0) {
-                alert('請選擇一個文件');
-                return;
-            }
-
-            var formData = new FormData();
-            formData.append('file', fileInput.files[0]);
-
-            var xhr = new XMLHttpRequest();
-            xhr.open("POST", "http://localhost:5000/upload", true);
-
-            xhr.onload = function () {
-                if (xhr.status === 200) {
-                    var responseData = JSON.parse(xhr.responseText);
-                    document.getElementById('response').innerText = JSON.stringify(responseData, null, 2);
-                } else {
-                    console.error("上傳失敗：" + xhr.status);
-                    document.getElementById('response').innerText = '上傳失敗：' + xhr.status;
-                }
-            };
-
-            xhr.onerror = function () {
-                console.error("請求錯誤");
-                document.getElementById('response').innerText = '請求錯誤';
-            };
-
-            xhr.send(formData);
-        });
-    </script>
 </body>
 </html>
-
-
-
